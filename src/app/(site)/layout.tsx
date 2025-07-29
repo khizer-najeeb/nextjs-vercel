@@ -15,6 +15,8 @@ import PreviewSliderModal from "@/components/Common/PreviewSlider";
 
 import ScrollToTop from "@/components/Common/ScrollToTop";
 import PreLoader from "@/components/Common/PreLoader";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function RootLayout({
   children,
@@ -52,6 +54,8 @@ export default function RootLayout({
             <Footer />
           </>
         )}
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
